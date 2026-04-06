@@ -1,0 +1,628 @@
+
+@media screen and (max-width: 320px) {
+
+    .about .author #author-img {
+        width: 90px;
+    }
+
+    .card-center .author #author-img2 {
+        width: 90px;
+    }
+
+    .about-card-content {
+        padding: 1rem;
+    }
+    
+    .about .about-title {
+        margin-top: 25em;
+    }
+
+    .about .card-center .about-card-content {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about .card-content2 {
+        margin-top: 23em;
+    }
+
+    .about .about-card-content #card-h3 {
+        font-size: 26px;
+    }
+
+    /*----------------------*/
+
+    .contact-form {
+        width: 90%;
+        overflow: hidden;
+    }
+
+    .contact-form  #input {
+        width: 230px;
+    }
+
+    .contact-form #scond-input {
+        width: 230px;
+        margin-left: 0em;
+    }
+
+    .contact-form #textarea {
+        width: 230px;
+        height: 100px;
+    }
+
+    .contact-form #button {
+        margin-top: 0.7em;
+    }
+
+    .more-contact #contact-h2 {
+        font-size: 25px;
+    }
+    
+    .contact .more-contact p {
+        width: 250px;
+        font-size: 11px;
+        margin: 1.5em auto;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+    .contact-form {
+        width: 90%;
+    }
+
+    #input {
+        width: 260px;
+    }
+
+    #scond-input {
+        width: 260px;
+        margin-left: 0em;
+    }
+
+    .contact textarea {
+        width: 260px;
+        height: 100px;
+    }
+
+    .contact-form #button {
+        margin-top: 0.7em;
+    }
+
+    .more-contact #contact-h2 {
+        font-size: 25px;
+    }
+    
+    .contact .more-contact p {
+        width: 250px;
+        font-size: 11px;
+        margin: 1.5em auto;
+    }    
+}
+
+@media screen and (max-width: 375px) {
+
+    .logo .main-logo {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    /*------------------------*/
+    
+    .main-nev nav ul li {
+        margin-top: 4em;
+    }
+
+    .main-nev .a {
+        color: white;
+        font-size: 14px;
+    }
+
+    .main-nev .dropdown li {
+        margin-top: 3em;
+    }
+
+    .main-nev .dropdown .dropdown-content li a {
+        font-size: 14px;
+    }
+
+     /*-----------------------*/
+
+    .header-container .app-heading .heading-image img {
+        width: 200px;
+        height: auto;
+    }
+
+    /*-----------------------*/
+
+    .header-container {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 4em;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .app-heading h1 {
+        font-size: 35px;
+    }
+
+    .app-heading h2 {
+        font-size: 28px;
+    }
+
+    .header-container .header-btn button {
+        margin-top: 1em;
+    }
+
+    .header-btn button a {
+        font-size: 13px;
+    }
+
+    .details .details-p {
+        margin-top: 1.5em;
+        font-size: 16px;
+    }
+
+    .heading-image #img {
+        width: 350px;
+    }
+
+    /*----------------------*/
+
+    .card-container .card {
+        width: 250px;
+        height: 320px;
+    }
+
+    .card .image img {
+        width: 80px;
+    }
+
+    .card .card1 h3 {
+        font-size: 25px;
+    }
+
+    .card .card-details {
+        font-size: 15px;
+    }
+    /*--------------------------*/
+
+    .details-container #details-img {
+        width: 220px;
+    }
+
+    .details-app .images-title p {
+        font-size: 2px;
+    }
+
+    .details-container #sub-img {
+        width: 60px;
+    }
+
+    .another-details-path .details-all .images-title h3 {
+        font-size: 19px;
+    }
+
+    .details-all #title-p {
+        font-size: 13px;
+    }
+
+    .details-sub #title-h3 {
+        font-size: 19px;
+    }
+
+    .details-sub #title-p {
+        font-size: 13px;
+    }
+
+    /*------------------------*/
+
+    .about .title {
+        font-size: 34px;
+    }
+
+    .about .title-p {
+        width: 80%;
+        font-size: 13px;
+        margin: 0 auto;
+    }
+    /*-------------------------*/
+
+    .about-title p {
+        font-size: 18px;
+        margin-bottom: 2em;
+    }
+
+    .about .author {
+        position: relative;
+        top: 3em;
+        right: 8.5em;
+    }
+
+    .about .author2 {
+        top: 22em;
+    }
+
+    .about .card-center .author img {
+        width: 100px;
+        top: 0em;
+        bottom: 50em;
+        right: 40em;
+    }
+    
+    .about .about-title {
+        margin-top: 20em;
+    }
+
+    .about .about-card-content {
+        width: 300px;
+        height: 250px;
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+    }
+
+    .about .card-content2 {
+        margin-top: 23em;
+    }
+
+    .about .about-card-content #card-h3 {
+        font-size: 26px;
+    }
+
+    .about .about-card-content #card-p {
+        font-size: 15px;
+    }
+
+    .about .about-card-content #about-s {
+        font-size: 17px;
+    }
+    /*-------------------------*/
+
+    .contact {
+        display: block;
+    }
+
+    .contact-container {
+        width: 100%;
+        height: auto;
+        padding-top: 0em;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+    
+    ::placeholder {
+        padding-left: 1em;
+    }
+
+    textarea ::placeholder {
+        padding-left: 0em;
+    }
+
+    .more-contact {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .more-contact h2 {
+        margin-top: 4em;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .more-contact p {
+        width: 250px;
+        font-size: 12px;
+        justify-content: center;
+    }
+    
+    .icons {
+        text-align: center;
+    }
+    
+    .copyright-des {
+        font-size: 10px;
+    }
+    
+    .copyright-des p {
+        opacity: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-image: none;
+    }
+
+    /*-----------------------*/
+
+    .heading-image img {
+        width: 600px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /*-----------------------*/
+
+    .header-container {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 4em;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1, h2 {
+        font-size: 50px;
+    }
+
+    .header-btn button {
+        width: 170px;
+        height: 40px;
+        padding: 0.5rem;
+        margin-top: 2em;
+    }
+
+    .details {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .details p {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /*----------------------*/
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 500px;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 4em;
+    }
+
+    .image img {
+        width: 100px;
+    }
+
+    .card1 h3 {
+        font-size: 40px;
+    }
+
+    .card-details {
+        margin-top: .6em;
+        font-size: 23px;
+    }
+    /*--------------------------*/
+
+    .details-container {
+        background-image: none;
+        flex-direction: column;
+        display: block;
+    }
+
+    .details-app {
+        margin: 0 auto;
+        margin-top: 6em;
+    }
+
+    .images-title p {
+        font-size: 15px;
+    }
+
+    .details-container .images img {
+        width: 120px;
+    }
+
+    .details-container .images-title h3 {
+        font-size: 25px;
+    }
+
+    .details-container .images-title p {
+        font-size: 16px;
+    }
+
+    /*------------------------*/
+
+    .title {
+        font-size: 40px;
+    }
+
+    .title-p {
+        font-size: 15px;
+    }
+    /*-------------------------*/
+
+    .right-bg img {
+        display: none;
+    }
+
+    /*------------------*/
+
+    .about-title p {
+        font-size: 18px;
+        margin-bottom: 7em;
+    }
+
+    .author {
+        width: 40%;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    .author img {
+        width: 140px;
+        top: 2em;
+    }
+
+    .about {
+        width: 100%;
+        height: 800px;
+    }
+    
+    .about-title {
+        margin-top: 25em;
+    }
+
+    .about-card {
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-card-content {
+        width: 400px;
+        height: 250px;
+        display: block;
+        margin: 4em auto;
+    }
+
+    .about .about-card-content h3 {
+        font-size: 35px;
+    }
+
+    .about .about-card-content p {
+        font-size: 20px;
+    }
+
+    .about .about-card-content #about-s {
+        font-size: 17px;
+    }
+    /*---------------------------*/
+
+    .contact-container {
+        margin-top: 45em;
+    }
+
+    .contact-form input {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .menu-btn {
+        display: block;
+        margin-right: 1em;
+        line-height: 50px;
+    }
+
+    #check:checked ~ ul {
+        left: 50%;
+    }
+
+    #check:checked ~ .menu-btn i::before {
+        content: "\f00d";
+    }
+
+    .main-nav {
+        background-color: none;
+    }
+    
+    .nevber {
+        background-image: linear-gradient(to right, rgb(244, 122, 69), rgb(241, 92, 99));
+        color: white;
+    }
+
+    .logo {
+        font-size: 30px;
+        padding: 0.3em 1em;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 48px;
+        left: +100%;
+        background-image: linear-gradient(to bottom, rgb(244, 122, 69), rgb(241, 92, 99));
+        width: 50%;
+        height: 100vh;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-top: 7em;
+        text-align: center;
+    }
+
+    .a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .main-nev {
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown li {
+        margin-top: 4.5em;
+    }
+
+    .dropdown .dropdown-content {
+        position: static;
+        box-shadow: none;
+        margin: 0 auto;
+        max-width: 200px;
+        display: none;
+        background-image: none;
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+
+    .dropdown .dropdown-content li a {
+        font-size: 20px;
+    }
+
+
+    /*--- body section start ---*/
+
+    body {
+        background-size: 445px;
+    }
+
+    .contact-form {
+        padding: .5rem;
+    }
+
+    .contact-form input {
+        margin-top: 1em;
+        width: 125px;
+    }
+
+    textarea {
+        width: 280px;
+    }
+
+    .contact-container {
+        background-size: 1000px;
+        background-position: bottom;
+    }
+
+    .more-contact p {
+        width: 320px;
+    }
+
+    .contact-form button {
+        margin-top: 2em;
+    }
+
+    /*--- body section start ---*/
+
+}
