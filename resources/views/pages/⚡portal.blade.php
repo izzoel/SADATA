@@ -72,12 +72,12 @@ new class extends Component {
         }
 
         /* .flip-box {
-                        position: relative;
-                        transform-style: preserve-3d;
-                        perspective: 1200px;
-                        cursor: pointer;
-                        height: 340px;
-                    } */
+                            position: relative;
+                            transform-style: preserve-3d;
+                            perspective: 1200px;
+                            cursor: pointer;
+                            height: 340px;
+                        } */
 
         .flip-box {
             position: relative;
@@ -101,15 +101,15 @@ new class extends Component {
         }
 
         /* .flip-box:hover .features-itemx:first-child {
-                                transform: rotateY(-180deg);
-                                opacity: 0;
-                            }
+                                    transform: rotateY(-180deg);
+                                    opacity: 0;
+                                }
 
-                            .flip-box:hover .features-itemx:last-child {
-                                transform: rotateY(0deg);
-                                transition-delay: 0.2s;
-                                opacity: 1;
-                            } */
+                                .flip-box:hover .features-itemx:last-child {
+                                    transform: rotateY(0deg);
+                                    transition-delay: 0.2s;
+                                    opacity: 1;
+                                } */
 
         .flip-box:hover .features-itemx {
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
@@ -227,44 +227,17 @@ new class extends Component {
                 @php
                     $delay = 0.2 * $loop->index;
                 @endphp
-                {{-- <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex"> --}}
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex" data-scroll-reveal="enter bottom move 30px over 0.6s after {{ $delay }}s">
 
                     <div class="flip-box">
-
-
-                        {{-- <div class="features-itemx">
-                            <div class=" d-flex flex-column h-100">
-                                <h5 class="card-title mb-2 pt-5">{{ $menu->menu }}</h5>
-                                <div class="card-image text-center grow d-flex align-items-center justify-content-center">
-                                    <img src="{{ asset('assets/images/features-icon-1.png') }}" alt="" class="img-fluid">
-                                </div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <img src="{{ $menu->logo ? asset('assets/images/bps.webp') : asset('assets/images/tapin.svg') }}" width="36"
-                                            class="rounded-circle bg-light p-1" alt="Logo">
-                                        <span class="small text-muted">Sumber Data</span>
-                                    </div>
-
-                                    <div class="arrow-icon">
-                                        <i class='bx bxs-right-arrow-alt'></i>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div> --}}
 
                         <div class="features-itemx">
                             <div class="card-inner d-flex flex-column h-100">
 
                                 <h5 class="card-title mb-2 pt-5">{{ $menu->menu }}</h5>
-
-                                <!-- Tengah fleksibel TANPA grow -->
                                 <div class="card-image text-center d-flex align-items-center justify-content-center flex-fill">
                                     <img src="{{ asset('assets/images/features-icon-1.png') }}" alt="" class="img-fluid">
                                 </div>
-
-                                <!-- Footer tetap bawah -->
                                 <div class="card-footer d-flex align-items-center justify-content-between mt-auto">
                                     <div class="d-flex align-items-center gap-2">
                                         <img src="{{ $menu->logo ? asset('assets/images/bps.webp') : asset('assets/images/tapin.svg') }}" width="36"
