@@ -25,7 +25,7 @@
             display: none !important;
         }
 
-        @media (min-width: 1300px) {
+        @media (min-width: 1140px) {
             .d-1300-block {
                 display: block !important;
             }
@@ -98,7 +98,7 @@
             font-size: clamp(2.6rem, 4.2vw, 4rem) !important;
         }
 
-        @media (min-width: 1300px) and (max-width: 1439.98px) {
+        @media (min-width: 1140px) and (max-width: 1439.98px) {
             .tugu-background {
                 background-size: 470px;
                 height: 500px;
@@ -116,12 +116,12 @@
             }
 
             .hero-copy {
-                margin-top: 15%;
+                margin-top: 20% !important;
                 max-width: none;
             }
 
             .hero-brand {
-                margin-top: -1.5rem;
+                margin-top: -2.5rem;
             }
 
             .hero-brand-logo {
@@ -173,34 +173,8 @@
                                 <img id="logoTapin" src="{{ asset('assets/images/tapin.svg') }}" alt="Logo Tapin" data-scroll-reveal="enter left move 30px over 0.4s after 0.4s"
                                     class="hero-brand-logo">
 
-                                <div data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                                    <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-2 hero-brand-mark">
-                                        <g filter="url(#filter0_d_2494_26)">
-                                            <circle cx="35" cy="35" r="25" fill="#01509D" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M29.0907 25H34.0065H42.0907H46.818C46.818 27.7499 44.6907 30 42.0907 30H34.0065H33.2271H29.0907C28.4502 30 27.9089 30.5725 27.9089 31.25C27.9089 31.634 30.1087 36.7314 30.4171 37.5H29.0907C25.8406 37.5 23.1816 34.6873 23.1816 31.25C23.1816 27.8123 25.8406 25 29.0907 25ZM30.9783 32.5H33.2271H34.0065H36.6268H37.0148L39.0213 37.5H36.7726H36.6265H34.0062H32.9846L30.978 32.5H30.9783ZM39.5826 32.5H40.9089C44.1591 32.5 46.818 35.3127 46.818 38.75C46.818 42.1877 44.1591 45 40.9089 45H35.9931H27.9089H23.1816C23.1816 42.2501 25.309 40 27.9089 40H35.9931H36.7726H40.9089C41.5495 40 42.0907 39.4275 42.0907 38.75C42.0907 38.366 39.891 33.2686 39.5826 32.5Z"
-                                                fill="white" />
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_d_2494_26" x="0" y="0" width="70" height="70" filterUnits="userSpaceOnUse"
-                                                color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                <feOffset />
-                                                <feGaussianBlur stdDeviation="5" />
-                                                <feComposite in2="hardAlpha" operator="out" />
-                                                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0" />
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2494_26" />
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2494_26" result="shape" />
-                                            </filter>
-                                        </defs>
-                                    </svg>
-                                </div>
-
-                                <span id="textSadata" class="ml-2" data-scroll-reveal="enter top move 30px over 0.8s after 0.4s"
-                                    class="hero-brand-text">
-                                    SADATA
-                                </span>
+                                <img id="logoSadata" src="{{ asset('assets/images/sadata2.svg') }}" alt="Logo Sadata" data-scroll-reveal="enter left move 30px over 0.4s after 0.4s"
+                                    class="hero-brand-logo">
                             </div>
 
                             <div class="mb-5">&nbsp;</div>
@@ -231,7 +205,7 @@
             <img src="{{ asset('assets/images/landing-mobile.png') }}" class="img-fluid d-block mx-auto" alt="Landing Tablet">
         </div>
     </div>
-    <div class="d-block d-md-none">
+    <div class="d-block d-xl-none">
         <div style="background-color: #f6ff00; width: 100%; max-width: 400px; margin: 0 auto;">
             <img src="{{ asset('assets/images/landing-mobile.png') }}" class="img-fluid d-block" alt="Tugu">
         </div>
