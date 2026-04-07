@@ -240,8 +240,8 @@ new class extends Component {
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between mt-auto">
                                     <div class="d-flex align-items-center gap-2">
-                                        <img src="{{ $menu->logo ? asset('storage/' . $menu->logo) : asset('assets/images/tapin.svg') }}" width="36" class="bg-light p-1"
-                                            alt="Logo">
+                                        <img src="{{ $menu->logo ? asset('storage/' . $menu->logo) : asset('assets/images/tapin.svg') }}" width="36"
+                                            class="rounded-circle bg-light p-1" alt="Logo">
                                         <span class="small text-muted">Sumber Data</span>
                                     </div>
 
