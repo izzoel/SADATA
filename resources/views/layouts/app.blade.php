@@ -58,7 +58,7 @@
     </div>
     <!-- ***** Preloader End ***** -->
 
-    <div class="desktop-app-shell d-none d-sm-block">
+    <div class="desktop-app-shell d-none d-xl-block">
         <div class="tugu-background"></div>
         <div class="welcome-area" id="welcome">
 
@@ -123,7 +123,12 @@
         </div>
     </div>
 
-    <div class="d-block d-sm-none">
+    <div class="d-none d-md-block d-xl-none">
+        <div style="width: 100%; max-width: 720px; margin: 0 auto; padding: 2rem 1rem 1rem;">
+            <img src="{{ asset('assets/images/landing-mobile.png') }}" class="img-fluid d-block mx-auto" alt="Landing Tablet">
+        </div>
+    </div>
+    <div class="d-block d-md-none">
         <div style="background-color: #f6ff00; width: 100%; max-width: 400px; margin: 0 auto;">
             <img src="{{ asset('assets/images/landing-mobile.png') }}" class="img-fluid d-block" alt="Tugu">
         </div>
