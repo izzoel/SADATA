@@ -12,7 +12,7 @@ new class extends Component {
     use WithFileUploads;
 
     public $editFieldRowId, $selectedId, $selectedLogo;
-    public $menu, $deskripsi, $link, $logo;
+    public $menu, $deskripsi, $link, $logo, $logoEdit;
 
     public bool $tampil_tambah = false;
 
@@ -73,14 +73,13 @@ new class extends Component {
         $this->reset(['tampil_tambah']);
     }
 
-    #[On('simpan')]
     public function simpan()
     {
         $this->validate();
 
         $logoPath = null;
         if ($this->logo) {
-            $logoPath = $this->logo->store('logo', 'public'); // simpan di storage/app/public/menu-logo
+            $logoPath = $this->logo->store('logo', 'public'); // simpan di storage/app/public/logo
         }
 
         Menu::create([
@@ -109,14 +108,14 @@ new class extends Component {
     {
         $this->selectedId = $id;
         $this->selectedLogo = $namaLogo;
-        $this->logo = null;
+        $this->logoEdit = null;
         $this->dispatch('open-modal');
     }
 
-    public function updatedLogo()
+    public function updatedLogoEdit()
     {
         $this->validate([
-            'logo' => 'image|mimes:jpg,jpeg,png,webp|max:2048',
+            'logoEdit' => 'image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
         $menu = Menu::findOrFail($this->selectedId);
@@ -125,7 +124,7 @@ new class extends Component {
             Storage::disk('public')->delete($menu->logo);
         }
 
-        $path = $this->logo->store('logo', 'public');
+        $path = $this->logoEdit->store('logo', 'public');
 
         $menu->update([
             'logo' => $path,
@@ -133,7 +132,7 @@ new class extends Component {
 
         $this->selectedLogo = $path;
 
-        $this->reset('logo');
+        $this->reset('logoEdit');
 
         $this->dispatch('toast_success', 'Logo berhasil diperbarui.');
         // $this->dispatch('close-modal');
@@ -216,8 +215,8 @@ new class extends Component {
                                         </div>
                                     </td>
                                     <td class="text-start">
-                                        <input class="form-control form-control-md {{ $errors->has('logo') ? 'is-invalid' : 'border border-secondary' }}" type="file"
-                                            wire:model="logo">
+                                        <input wire:model="logo" class="form-control form-control-md {{ $errors->has('logo') ? 'is-invalid' : 'border border-secondary' }}"
+                                            type="file">
 
                                         <div class="invalid-feedback">
                                             @error('logo')
@@ -318,8 +317,8 @@ new class extends Component {
                     <div class="row align-items-center">
                         <div class="col-auto">
                             <div class="mb-0">
-                                @if ($this->logo)
-                                    <img src="{{ $this->logo->temporaryUrl() }}" style="width:60px;">
+                                @if ($this->logoEdit)
+                                    <img src="{{ $this->logoEdit->temporaryUrl() }}" style="width:60px;">
                                 @elseif ($this->selectedLogo)
                                     <img src="{{ asset('storage/' . $this->selectedLogo) }}" style="width:60px; cursor:pointer">
                                 @else
@@ -329,7 +328,7 @@ new class extends Component {
                         </div>
 
                         <div class="col">
-                            <input wire:model="logo" class="form-control form-control-md {{ $errors->has('logo') ? 'is-invalid' : 'border border-secondary' }}" type="file">
+                            <input wire:model="logoEdit" class="form-control form-control-md {{ $errors->has('logoEdit') ? 'is-invalid' : 'border border-secondary' }}" type="file">
                         </div>
                     </div>
                 </div>

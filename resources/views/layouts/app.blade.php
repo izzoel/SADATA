@@ -58,7 +58,7 @@
     </div>
     <!-- ***** Preloader End ***** -->
 
-    <div class="desktop-app-shell d-none d-md-block">
+    <div class="desktop-app-shell d-none d-sm-block">
         <div class="tugu-background"></div>
         <div class="welcome-area" id="welcome">
 
@@ -100,7 +100,6 @@
                                 </span>
                             </div>
 
-
                             <div class="mb-5">&nbsp;</div>
                             <div class="mb-5">&nbsp;</div>
                             <h1 data-scroll-reveal="enter left move 30px over 0.4s after 0.4s"style="line-height:3.5rem">SATU DATA
@@ -124,7 +123,7 @@
         </div>
     </div>
 
-    <div class="d-block d-md-none">
+    <div class="d-block d-sm-none">
         <div style="background-color: #f6ff00; width: 100%; max-width: 400px; margin: 0 auto;">
             <img src="{{ asset('assets/images/landing-mobile.png') }}" class="img-fluid d-block" alt="Tugu">
         </div>
@@ -145,7 +144,6 @@
         <div class="container">
             <div class="row">
                 <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    {{-- <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App"> --}}
                     <img src="{{ asset('assets/images/mengapa-sadata.svg') }}" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
                 <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
@@ -179,9 +177,6 @@
         </div>
     </section>
     <!-- ***** Features Big Item End ***** -->
-
-    {{-- <div class="right-image-decor"></div> --}}
-
 
     <!-- ***** Footer Start ***** -->
     <footer class="mt-0 py-5" style="background: linear-gradient(135deg, #d97f0a, #e64b4b); color: #fff;">

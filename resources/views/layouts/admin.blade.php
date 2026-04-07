@@ -40,26 +40,6 @@
                             <div>menu</div>
                         </a>
                     </li>
-                    {{-- @foreach ($menus->where('parent_id', null)->orderBy('urutan') as $menu)
-                        <li class="menu-header small text-uppercase">
-                            <span class="menu-header-text">{{ $menu->menu }}</span>
-                        </li>
-                        @php
-                            $children = $menus->where('parent_id', $menu->id);
-                        @endphp
-                        @foreach ($children as $child)
-                            @if ($child->segment)
-                                @can('r_' . $child->segment)
-                                    <li class="menu-item">
-                                        <a wire:navigate href="{{ $child->segment ?? '#' }}" class="menu-link">
-                                            <i class="menu-icon tf-icons bx {{ $child->icon ?? 'bx-circle' }}"></i>
-                                            <div>{{ $child->menu }}</div>
-                                        </a>
-                                    </li>
-                                @endcan
-                            @endif
-                        @endforeach
-                    @endforeach --}}
                 </ul>
 
 
