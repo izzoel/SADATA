@@ -72,12 +72,12 @@ new class extends Component {
         }
 
         /* .flip-box {
-                            position: relative;
-                            transform-style: preserve-3d;
-                            perspective: 1200px;
-                            cursor: pointer;
-                            height: 340px;
-                        } */
+                                        position: relative;
+                                        transform-style: preserve-3d;
+                                        perspective: 1200px;
+                                        cursor: pointer;
+                                        height: 340px;
+                                    } */
 
         .flip-box {
             position: relative;
@@ -101,15 +101,15 @@ new class extends Component {
         }
 
         /* .flip-box:hover .features-itemx:first-child {
-                                    transform: rotateY(-180deg);
-                                    opacity: 0;
-                                }
+                                                transform: rotateY(-180deg);
+                                                opacity: 0;
+                                            }
 
-                                .flip-box:hover .features-itemx:last-child {
-                                    transform: rotateY(0deg);
-                                    transition-delay: 0.2s;
-                                    opacity: 1;
-                                } */
+                                            .flip-box:hover .features-itemx:last-child {
+                                                transform: rotateY(0deg);
+                                                transition-delay: 0.2s;
+                                                opacity: 1;
+                                            } */
 
         .flip-box:hover .features-itemx {
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
@@ -240,7 +240,7 @@ new class extends Component {
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between mt-auto">
                                     <div class="d-flex align-items-center gap-2">
-                                        <img src="{{ $menu->logo ? asset('assets/images/bps.webp') : asset('assets/images/tapin.svg') }}" width="36"
+                                        <img src="{{ $menu->logo ? asset('storage/' . $menu->logo) : asset('assets/images/tapin.svg') }}" width="36"
                                             class="rounded-circle bg-light p-1" alt="Logo">
                                         <span class="small text-muted">Sumber Data</span>
                                     </div>
