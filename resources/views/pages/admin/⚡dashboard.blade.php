@@ -19,14 +19,14 @@ new class extends Component {
     protected $rules = [
         'menu' => 'required',
         'link' => 'required',
-        'logo' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:512',
+        'logo' => 'nullable|image|mimes:jpg,jpeg,png,svg,webp|max:1024',
     ];
 
     protected $messages = [
         'menu.required' => 'Harus diisi.',
         'link.required' => 'Harus diisi.',
         'logo.image' => 'File harus berupa gambar.',
-        'logo.mimes' => 'Format gambar harus jpg, jpeg, png, atau webp.',
+        'logo.mimes' => 'Format gambar harus jpg, jpeg, png, svg, atau webp.',
         'logo.max' => 'Ukuran gambar maksimal 2MB.',
     ];
 
@@ -328,7 +328,8 @@ new class extends Component {
                         </div>
 
                         <div class="col">
-                            <input wire:model="logoEdit" class="form-control form-control-md {{ $errors->has('logoEdit') ? 'is-invalid' : 'border border-secondary' }}" type="file">
+                            <input wire:model="logoEdit" class="form-control form-control-md {{ $errors->has('logoEdit') ? 'is-invalid' : 'border border-secondary' }}"
+                                type="file">
                         </div>
                     </div>
                 </div>
