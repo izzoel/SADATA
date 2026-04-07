@@ -21,8 +21,23 @@
 
     @stack('style')
     <style>
+        .d-1300-none {
+            display: none !important;
+        }
+
+        @media (min-width: 1300px) {
+            .d-1300-block {
+                display: block !important;
+            }
+
+            .d-1300-none {
+                display: none !important;
+            }
+        }
+
         .desktop-app-shell {
             position: relative;
+            overflow: hidden;
         }
 
         .tugu-background {
@@ -43,6 +58,94 @@
             position: relative;
             z-index: 1;
         }
+
+        .hero-row {
+            margin-left: 0 !important;
+            padding-left: clamp(1rem, 4vw, 4rem);
+        }
+
+        .hero-copy {
+            margin-top: 15%;
+            max-width: 620px;
+        }
+
+        .hero-brand {
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: -1rem;
+        }
+
+        .hero-brand-logo {
+            height: clamp(78px, 8vw, 140px);
+            width: auto;
+        }
+
+        .hero-brand-mark {
+            width: clamp(88px, 10vw, 200px);
+            height: auto;
+        }
+
+        .hero-brand-text {
+            margin: 0;
+            line-height: 1;
+            font-weight: bold;
+            font-size: clamp(2.4rem, 4vw, 4rem);
+            word-break: break-word;
+        }
+
+        .hero-title {
+            line-height: 1.15 !important;
+            font-size: clamp(2.6rem, 4.2vw, 4rem) !important;
+        }
+
+        @media (min-width: 1300px) and (max-width: 1439.98px) {
+            .tugu-background {
+                background-size: 470px;
+                height: 500px;
+            }
+
+            .hero-copy {
+                margin-top: 11%;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .hero-row {
+                margin-left: -8rem !important;
+                padding-left: 0;
+            }
+
+            .hero-copy {
+                margin-top: 15%;
+                max-width: none;
+            }
+
+            .hero-brand {
+                margin-top: -1.5rem;
+            }
+
+            .hero-brand-logo {
+                height: 140px;
+            }
+
+            .hero-brand-mark {
+                width: 200px;
+            }
+
+            .hero-brand-text {
+                font-size: 4rem;
+            }
+
+            .hero-title {
+                line-height: 3.5rem !important;
+                font-size: 52px !important;
+            }
+
+            .tugu-background {
+                background-size: 550px;
+                height: 540px;
+            }
+        }
     </style>
 
 </head>
@@ -58,20 +161,20 @@
     </div>
     <!-- ***** Preloader End ***** -->
 
-    <div class="desktop-app-shell d-none d-xl-block">
+    <div class="desktop-app-shell d-none d-1300-block">
         <div class="tugu-background"></div>
         <div class="welcome-area" id="welcome">
 
             <div class="header-text">
                 <div class="container">
-                    <div class="row" style="margin-left:-8rem">
-                        <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-top:15%">
-                            <div class="d-flex align-items-center mb-4">
+                    <div class="row hero-row">
+                        <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12 hero-copy">
+                            <div class="d-flex align-items-center mb-4 hero-brand">
                                 <img id="logoTapin" src="{{ asset('assets/images/tapin.svg') }}" alt="Logo Tapin" data-scroll-reveal="enter left move 30px over 0.4s after 0.4s"
-                                    style="height:140px; width:auto;">
+                                    class="hero-brand-logo">
 
                                 <div data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                                    <svg width="200" height="200" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-2">
+                                    <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-2 hero-brand-mark">
                                         <g filter="url(#filter0_d_2494_26)">
                                             <circle cx="35" cy="35" r="25" fill="#01509D" />
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -95,14 +198,14 @@
                                 </div>
 
                                 <span id="textSadata" class="ml-2" data-scroll-reveal="enter top move 30px over 0.8s after 0.4s"
-                                    style="margin:0; line-height:1; font-weight:bold; font-size:4rem;">
+                                    class="hero-brand-text">
                                     SADATA
                                 </span>
                             </div>
 
                             <div class="mb-5">&nbsp;</div>
                             <div class="mb-5">&nbsp;</div>
-                            <h1 data-scroll-reveal="enter left move 30px over 0.4s after 0.4s"style="line-height:3.5rem">SATU DATA
+                            <h1 data-scroll-reveal="enter left move 30px over 0.4s after 0.4s" class="hero-title">SATU DATA
                                 <em data-scroll-reveal="enter top move 30px over 0.5s after 0.4s">Kabupaten Tapin</em>
                             </h1>
 
@@ -123,7 +226,7 @@
         </div>
     </div>
 
-    <div class="d-none d-md-block d-xl-none">
+    <div class="d-none d-md-block d-1300-none">
         <div style="width: 100%; max-width: 720px; margin: 0 auto; padding: 2rem 1rem 1rem;">
             <img src="{{ asset('assets/images/landing-mobile.png') }}" class="img-fluid d-block mx-auto" alt="Landing Tablet">
         </div>
